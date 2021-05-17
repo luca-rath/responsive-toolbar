@@ -24,18 +24,18 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
-      - name: Install deps and build library
+      - name: Install dependencies of library
         uses: bahmutov/npm-install@v1
         with:
           useLockFile: false
 
-      - name: Install deps and build example
+      - name: Install dependencies of example
         uses: bahmutov/npm-install@v1
         with:
           working-directory: example
           useLockFile: false
 
-      - name: Build
+      - name: Build example
         working-directory: example
         run: yarn build
 

@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "start": "parcel public/index.html",
-    "build": "parcel build public/index.html"
+    "build": "parcel build --public-url ./ public/index.html"
   },
   "dependencies": {
     "react-app-polyfill": "^1.0.0"

@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
-      - name: Install deps and build
+      - name: Install dependencies
         uses: bahmutov/npm-install@v1
         with:
           useLockFile: false
